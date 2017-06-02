@@ -1,0 +1,6 @@
+framework module Pods____sliderView {
+  umbrella header "Pods-自定义sliderView-umbrella.h"
+
+  export *
+  module * { export * }
+}

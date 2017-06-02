@@ -12,9 +12,15 @@
 		F67CA3681ED2C1A700DBB059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67CA3661ED2C1A700DBB059 /* Main.storyboard */; };
 		F67CA36A1ED2C1A700DBB059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67CA3691ED2C1A700DBB059 /* Assets.xcassets */; };
 		F67CA36D1ED2C1A700DBB059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67CA36B1ED2C1A700DBB059 /* LaunchScreen.storyboard */; };
+		F67CA3751ED2C72A00DBB059 /* YXYCustomSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67CA3741ED2C72A00DBB059 /* YXYCustomSliderView.swift */; };
+		F67CA3771ED2D00500DBB059 /* CommonValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67CA3761ED2D00500DBB059 /* CommonValue.swift */; };
+		FA78275DC768019F36787FED /* Pods____sliderView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 548C03AE16D85B227FED7E16 /* Pods____sliderView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		548C03AE16D85B227FED7E16 /* Pods____sliderView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods____sliderView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1F2D2D4C861D786FDC1886 /* Pods-自定义sliderView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-自定义sliderView.release.xcconfig"; path = "Pods/Target Support Files/Pods-自定义sliderView/Pods-自定义sliderView.release.xcconfig"; sourceTree = "<group>"; };
+		AC36AC338FB5D7D29F568CD7 /* Pods-自定义sliderView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-自定义sliderView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-自定义sliderView/Pods-自定义sliderView.debug.xcconfig"; sourceTree = "<group>"; };
 		F67CA35F1ED2C1A700DBB059 /* 自定义sliderView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义sliderView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67CA3621ED2C1A700DBB059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F67CA3641ED2C1A700DBB059 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		F67CA3691ED2C1A700DBB059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F67CA36C1ED2C1A700DBB059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F67CA36E1ED2C1A700DBB059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F67CA3741ED2C72A00DBB059 /* YXYCustomSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXYCustomSliderView.swift; sourceTree = "<group>"; };
+		F67CA3761ED2D00500DBB059 /* CommonValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA78275DC768019F36787FED /* Pods____sliderView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D7F4BE8ED096D09FD83BDBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC36AC338FB5D7D29F568CD7 /* Pods-自定义sliderView.debug.xcconfig */,
+				7B1F2D2D4C861D786FDC1886 /* Pods-自定义sliderView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA34F2DBF30A2E8F5FE6A677 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				548C03AE16D85B227FED7E16 /* Pods____sliderView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F67CA3561ED2C1A700DBB059 = {
 			isa = PBXGroup;
 			children = (
 				F67CA3611ED2C1A700DBB059 /* 自定义sliderView */,
 				F67CA3601ED2C1A700DBB059 /* Products */,
+				8D7F4BE8ED096D09FD83BDBE /* Pods */,
+				DA34F2DBF30A2E8F5FE6A677 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				F67CA3621ED2C1A700DBB059 /* AppDelegate.swift */,
+				F67CA3761ED2D00500DBB059 /* CommonValue.swift */,
 				F67CA3641ED2C1A700DBB059 /* ViewController.swift */,
+				F67CA3741ED2C72A00DBB059 /* YXYCustomSliderView.swift */,
 				F67CA3661ED2C1A700DBB059 /* Main.storyboard */,
 				F67CA3691ED2C1A700DBB059 /* Assets.xcassets */,
 				F67CA36B1ED2C1A700DBB059 /* LaunchScreen.storyboard */,
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F67CA3711ED2C1A700DBB059 /* Build configuration list for PBXNativeTarget "自定义sliderView" */;
 			buildPhases = (
+				2BC93BED206583C8A391A6BD /* [CP] Check Pods Manifest.lock */,
 				F67CA35B1ED2C1A700DBB059 /* Sources */,
 				F67CA35C1ED2C1A700DBB059 /* Frameworks */,
 				F67CA35D1ED2C1A700DBB059 /* Resources */,
+				C5BA111D4E03DFE72ABC4342 /* [CP] Embed Pods Frameworks */,
+				C73674A7914BE71250E407FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +129,7 @@
 				TargetAttributes = {
 					F67CA35E1ED2C1A700DBB059 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DD7738AKPG;
 					};
 				};
 			};
@@ -130,12 +164,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BC93BED206583C8A391A6BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5BA111D4E03DFE72ABC4342 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-自定义sliderView/Pods-自定义sliderView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C73674A7914BE71250E407FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-自定义sliderView/Pods-自定义sliderView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F67CA35B1ED2C1A700DBB059 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67CA3751ED2C72A00DBB059 /* YXYCustomSliderView.swift in Sources */,
 				F67CA3651ED2C1A700DBB059 /* ViewController.swift in Sources */,
+				F67CA3771ED2D00500DBB059 /* CommonValue.swift in Sources */,
 				F67CA3631ED2C1A700DBB059 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,23 +331,33 @@
 		};
 		F67CA3721ED2C1A700DBB059 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC36AC338FB5D7D29F568CD7 /* Pods-自定义sliderView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "自定义sliderView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.YXY.---sliderView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		F67CA3731ED2C1A700DBB059 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B1F2D2D4C861D786FDC1886 /* Pods-自定义sliderView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "自定义sliderView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.YXY.---sliderView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +380,7 @@
 				F67CA3731ED2C1A700DBB059 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
